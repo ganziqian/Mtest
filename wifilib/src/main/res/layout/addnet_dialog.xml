@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_bg_icom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:text="              添加网络              "
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+
+    <EditText
+        android:id="@+id/add_wifi_name_ed"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="xjkbDT2"
+        android:background="@color/transparent"
+        android:textColorHint="@color/textcolor2"
+        android:hint="输入网络名称(SSID)"
+        android:textColor="@color/textcolor2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/addnet_ps_layout"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/add_wifi_pws_checbox"
+            android:background="@drawable/syes_selector"
+            android:button="@null"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/add_wifi_psw_ed"
+            android:padding="10dp"
+            android:layout_toLeftOf="@id/add_wifi_pws_checbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:textColorHint="@color/textcolor2"
+            android:text="xingjikubao88"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:textColor="@color/textcolor2"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/addnet_jiatype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="安全性:"
+            android:textColor="@color/textcolor2"/>
+
+        <Spinner
+            android:layout_toRightOf="@id/addnet_jiatype_tv"
+            android:gravity="left"
+            android:background="@color/transparent"
+            android:id="@+id/add_net_wifistate_spiner"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/addnet_queding_btn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="确 定"
+            android:textSize="16sp"
+            android:background="@drawable/buttom_selector"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/addnet_quxiao_btn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="取 消"
+            android:textSize="16sp"
+            android:background="@drawable/buttom_selector"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

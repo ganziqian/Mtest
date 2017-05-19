@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_bg_icom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:text="              输入密码              "
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/in_wifi_pws_checbox"
+            android:background="@drawable/syes_selector"
+            android:button="@null"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:layout_margin="1dp"
+            android:id="@+id/wifi_psw_ed"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/in_wifi_pws_checbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:textColorHint="@color/textcolor2"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:textColor="@color/textcolor2"/>
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/queding_btn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="确 定"
+            android:textSize="16sp"
+            android:background="@drawable/buttom_selector"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/haha_tttv3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="取 消"
+            android:textSize="16sp"
+            android:background="@drawable/buttom_selector"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

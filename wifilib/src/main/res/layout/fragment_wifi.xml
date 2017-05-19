@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_WifiConnecion">
+    <RelativeLayout
+        android:id="@+id/head_ll_WifiConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:paddingBottom="7dp">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/head_TextView_WifiConnecion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0sp"
+                android:textSize="16sp"
+                android:textColor="@color/textcolor2"
+                android:text="选取网络"/>
+            <ProgressBar
+                android:id="@+id/pross"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/wifiState_Button_WifiConnection"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wifi_on"/>
+        <TextView
+            android:layout_toLeftOf="@id/wifiState_Button_WifiConnection"
+            android:id="@+id/wifi_fresh_tv"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textcolor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/head_ll_WifiConnection"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/white"/>
+
+
+
+    <Button
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/add_wifi_net"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:textColor="@color/textcolor2"
+        android:text="+ 添加网络"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_above="@id/add_wifi_net"
+        android:id="@+id/wifi_listview"
+        android:layout_below="@+id/head_ll_WifiConnection"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:scrollingCache="false"
+        android:divider="@color/transparent"
+        android:dividerHeight="0.5dp"
+        android:layout_height="wrap_content">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/banner_WifiConnecion"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        />
+
+
+
+
+</RelativeLayout>

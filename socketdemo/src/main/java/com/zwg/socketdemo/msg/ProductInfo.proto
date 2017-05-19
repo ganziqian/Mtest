@@ -1,0 +1,10 @@
+option java_package = "com.zwg.socketdemo.msg";
+option java_outer_classname = "ProductInfo";
+
+message ProductInfo{
+  required string luckNum = 1;
+  required string productCode = 2;
+  required string amount = 3;
+  optional string phoneNum = 4;
+  required int32 uid =5;
+}
